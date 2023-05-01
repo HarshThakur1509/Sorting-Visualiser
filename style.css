@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+ul {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    top: 15rem;
+}
+
+li {
+    list-style: none;
+    width: 0.5rem;
+    background-color: black;
+    /* border: 2px solid red; */
+    height: 5rem;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+.btns {
+    position: absolute;
+    bottom: 4rem;
+}
+
+.sliders {
+    position: absolute;
+    top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.sliders span {
+    text-align: center;
+}
+
+.algos {
+    position: absolute;
+    display: flex;
+    gap: 5rem;
+    top: 8rem;
+}
+
+.algos span {
+    position: relative;
+    cursor: pointer;
+}
+
+.algos span::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.algos span:hover::after {
+    width: 60px;
+}
